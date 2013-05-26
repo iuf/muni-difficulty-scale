@@ -1,0 +1,253 @@
+\documentclass[a4paper,oneside]{scrartcl}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{textcomp} %provides \textdegree command
+% \usepackage[nenglish]{babel}
+
+\usepackage{hyperref} % clickable table of contents, index in pdf files
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+\newcommand{\unit}[1]{\ensuremath{\, \mathrm{#1}}} % use i.e. \unit{km} in math mode for better units
+
+\title{Difficulty Rating for Muni Disciplines}
+\author{International Unicycling Federation}
+\date{\today}
+
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+This is the abstract.
+\end{abstract}
+
+\newpage
+
+\tableofcontents
+\newpage
+
+\section{Motivation}
+
+There are various trail rating systems specific to mountain biking or hiking.
+These rating systems are only partially applicable for mountain unicycling (muni)
+and cannot be used as an objective base for defining the difficulty of a muni
+downhill or cross country track.\\
+The goal of this rating system is to provide a more objective and accurate way
+of rating difficulties of trail sections as well as complete cross country and
+downhill courses.\\
+The benefit of a standardized way of rating tracks is that participants of muni
+events no longer need to rely on the subjective statements of the event host but
+can use the rating scores to assess the difficulty for theirselves.\\
+In the future the rating system might also be used to set minimum or maximum
+difficulty requirements for world championships or to distinguish between 
+easy downhill and downhill.
+
+
+
+\section{The M Scale}
+\label{sec:difficulty-m-scale}
+
+The M scale describes the technical difficulty of a single trail section. A
+section is a part of a trail with a length of 5 to 20 meters.\\
+The rating is valid for good conditions (daylight, dry). It is not influenced by how dangerous
+the section is.
+
+There are five grades of difficulty (M0 to M5) as described in the following
+subsection. The M scale can be used independently to assign technical difficulties.
+
+\subsection{Difficulty Grades}
+\label{sec:m-scale-levels}
+The following list shows typical characteristics of the different grades. Not all
+characteristics have to be satisfied to warrant a respective grade, but at least
+two should be fulfilled.
+
+\paragraph{M0}
+pavement or solid soil/compact gravel, no obstacles, slope < 20\%,
+90\textdegree\ turn within > 2 m and with slope < 10\%
+
+\paragraph{M1}
+partly loose soil/gravel,
+small obstacles (small stones, flat roots ~ 5 cm),
+single 15 cm steps,
+slope < 40\%,
+90\textdegree\ turn within > 1 m and with slope < 20\%
+
+\paragraph{M2}
+loose soil/gravel,
+obstacles (stones, roots ~ 10 cm),
+single 30 cm steps,
+slope < 60\%,
+90\textdegree\ turn within > 0.5 m and with slope < 30\%
+
+\paragraph{M3}
+loose soil with loose stones (size of few cm),
+obstacles (stones, roots ~ 20 cm),
+several irregular steps ~ 20 cm each,
+drops < 1 m, gaps < 0.5 m,
+slope < 80\%,
+135\textdegree\ turn within ~ 0.5 m and with slope < 40\%
+
+\paragraph{M4}
+very loose/slippery soil with loose stones (size of several cm),
+big obstacles (stones, logs ~ 30 cm),
+several irregular steps ~ 30 cm each,
+drops < 1.5 m, gaps < 1 m,
+slope < 100\%,
+135\textdegree\ turn within ~ 0.5 m and with slope < 60\%
+
+\paragraph{M5}
+very loose/slippery soil with loose stones (size of several cm),
+very big obstacles (stones, logs ~ 40 cm),
+several irregular steps ~ 40 cm each,
+drops > 1.5 m, gaps > 1 m,
+slope > 100\%,
+135\textdegree\ turn within ~ 0.5 m and with slope < 80\%
+
+\subsection{Grade Refinement}
+To refine the scale, grades like M4.5 (a section which has a difficulty between
+M4 and M5) are possible.
+%TODO: embed images or link official source
+A visual indication for all possible grades is given at
+\url{https://drive.google.com/?authuser=0#folders/0B6zv9bFd15YXdXFOcFR4Z05IU28}
+
+\section{Scales to Rate Whole Trails}
+\label{sec:muni-difficulty-udh-uxc}
+
+These scales are based on the features of whole tracks and are important to
+define requirements for downhill or cross country courses at competitions.\\
+The UDH and UXC scales use additional criteria on top of the technical difficulty
+to describe the overall difficulty of a course, when ridden in one go without stopping.
+These criteria are weighted differently for the UXC and UDH scale to account for the
+different nature of cross country and downhill.\\
+The weighting is achieved through the maximum points assigned to each criteria. The sum
+of all maximum points equals the maximum score of the scales.
+
+For each criteria, the calculation is based on linear interpolation on three intervals.
+The interval borders are given in the descriptions below and correspond to 0\%,
+20\%, 80\% and 100\% of the maximum points.\\
+For values below the lowest interval border the minimum number of points is
+given, for values above the highest interval border the maximum number of points
+is given.\\
+The final rating of the track is the sum of all criteria points, rounded to the nearest integer.
+
+\subsection{UDH Scale (Unicycle Downhill Scale)}
+\label{sec:udh-scale}
+
+The scale ranges from 0 to 40 points and describes the overall difficulty of a
+muni downhill track. Each criteria is described below along with the
+interval borders.
+
+\paragraph{Total Length (0-10 points)}
+The total length of the trail in km: 0/2/8/10 points given to 0/1/4/8 km
+
+\paragraph{Average Slope (0-10 points)}
+The total height difference divided by total length of the trail: 0/2/8/10
+points given to 0/10/25/35 \%
+
+\paragraph{Maximum Difficulty (0-10 points)}
+The rating of the most difficult section of the trail using the M scale:
+0/2/8/10 points given to M 0/2/3.5/5
+
+\paragraph{Average Difficulty (0-10 points)}
+The average difficulty rating of the trail using the M scale, 0/2/8/10 points
+given to M 0/1/2.5/3.5
+
+
+
+\subsection{UXC Scale (Unicycle Cross Country Scale)}
+\label{sec:uxc-scale}
+The scale ranges from 0 to 40 points and describes the overall difficulty of a
+cross country track. Each category is described below along with the
+interval borders.
+
+\paragraph{Total Length (0-15 points)}
+The total length of the trail: 0/3/12/15 points given to 0/10/25/40 km
+
+\paragraph{Total Ascent (0-7.5 points)} 
+The total ascent of the trail: 0/1.5/6/7.5 points given to 0/200/800/1500 m
+
+\paragraph{Maximum Slope Uphill (0-5 points)} 
+The slope of the steepest uphill section, 0/1/4/5 points given to 0/10/25/35 \%
+
+\paragraph{Maximum Difficulty (0-5 points)}
+The rating of the most difficult section of the trail using the M scale: 0/1/4/5
+points given to M 0/2/2.5/4
+
+\paragraph{Average Difficulty (0-7.5 points)} 
+The average difficulty rating of the trail using the M scale: 0/1.5/6/7.5 points
+given to M 0/0.5/1/2
+
+Excel sheet to calculate the UDH rating: \url{https://docs.google.com/open?id=0B6zv9bFd15YXQlVUV3hQRFRRc3M}, to be replaced by an official link
+
+
+\section{Applying the Scale}
+
+\subsection{Gathering Track Data}
+For measuring the length, height difference and total ascent of a trail, the
+geometry of the trail has to be determined using global navigation satellite
+systems like GPS and/or GLONASS\footnote{See \url{http://glonass-iac.ru/en/}}.
+The slope of single sections is ideally measured using an inclinometer.
+
+The data gathering can be done by riding/walking the track, while recording it
+with e.g. GPS. The more difficult sections can be repeated afterwards to take
+some notes about their M grades.
+
+\subsection{Rating Section Difficulties}
+The technical difficulty rating of a single section or of the whole trail has to
+follow the definitions of the M scale and should not be decided by a single
+person to avoid subjectivity.
+
+%TODO: include 1 or 2 pictures and describe why the shown tracks are how difficult.
+
+\subsection{Calculating UDH or UXC Scores}
+The scores are calculated using linear interpolation, so that the following formula can be applied for any value which is
+within the range of the minimal criteria measure and the maximum criteria measure.
+
+$s(x) = \frac{p_1 - p_0}{i_1 - i_0} (x - i_0) + p_0$\\
+%
+$p_0$ represents the lower boundary of the available points. For the first interval this is always 0.\\
+$p_1$ represents the upper boundary of the available points.\\
+$i_0$ represents the lower boundary of the criteria measure.\\
+$i_1$ represents the upper boundary of the criteria measure.\\
+$x$ represents the criteria input for which the score should be determined.\\
+
+
+
+\subsubsection{UDH Example}
+TODO%TODO: complete sample with all criteria
+
+Using the UDH Scale, one could determine the score for a trail with a length of
+6km by putting the values into the formula shown above. 6km is in between 4 and
+8km, so that 4 represents the lower criteria measure boundary($i_0$) and 8
+represents the upper criteria measure boundary($i_1$). The lower boundary for
+the points is hence 8 and the upper boundary is 10.\\
+This results in: $s(6) = \frac{10 - 8}{8 - 4} (6 - 4) + 8 = 9$\\
+
+For convenience these calculations can be automatically done using the
+online calculator: %TODO: link to online tool
+
+\subsubsection{UXC Example}
+TODO
+
+
+
+\subsection{Publishing Scores}
+Hosts of muni events are encouraged to publish the scores for the event tracks
+in advance so that participants know what kind of track expects them.\\ The
+score should be published together with a reference to this document or with a
+short description of the rating system.
+
+\section{Feedback and Improvements}
+The rating system described in this publication is an experimental version which
+requires intensive testing. Ideas for improvements or other feedback is welcome
+at any time and can be sent to the IUF. %TODO: proper contact details? no email in clear text to avoid spam
+
+\end{document}
