@@ -7,6 +7,7 @@
 % \usepackage[nenglish]{babel}
 
 \usepackage{hyperref} % clickable table of contents, index in pdf files
+
 \hypersetup{
     colorlinks,
     citecolor=black,
@@ -179,7 +180,7 @@ The slope of the steepest uphill section, 0/1/4/5 points given to 0/10/25/35~\%
 
 \paragraph{Maximum Difficulty (0-5 points)}
 The rating of the most difficult section of the trail using the M scale: 0/1/4/5
-points given to M 0/2/2.5/4
+points given to M 0/1/2.5/4
 
 \paragraph{Average Difficulty (0-7.5 points)} 
 The average difficulty rating of the trail using the M scale: 0/1.5/6/7.5 points
@@ -223,22 +224,62 @@ $x$ represents the criteria input for which the score should be determined.\\
 
 
 \subsubsection{UDH Example}
-TODO%TODO: complete sample with all criteria
 
 Using the UDH Scale, one could determine the score for a trail with a length of
-6km by putting the values into the formula shown above. 6km is in between 4 and
-8km, so that 4 represents the lower criteria measure boundary($i_0$) and 8
-represents the upper criteria measure boundary($i_1$). The lower boundary for
+6~km by putting the values into the formula shown above. 6~km is in between 4 and
+8~km, so that 4 represents the lower criteria measure boundary ($i_0$) and 8
+represents the upper criteria measure boundary ($i_1$). The lower boundary for
 the points is hence 8 and the upper boundary is 10.\\
 This results in: $s(6) = \frac{10 - 8}{8 - 4} (6 - 4) + 8 = 9$\\
 
-For convenience these calculations can be automatically done using the
-online calculator: %TODO: link to online tool
+Let us further assume that the track has an average slope of 16\% (corresponding to about 9 degrees).
+Here, the interpolation is done on the interval from $i_0 = 10\%$ to $i_1 = 25\%$ yielding points 
+between $p_0 = 2$ and $p_1 = 8$. \\
+The equation thus reads: $s(16) = \frac{8 - 2}{25 - 10} (16 - 10) + 2 = 4.4$\\
+
+After long and fierce debates the local muni riders decided that the
+most difficult section of the track warrants a rating of M3.5. 
+In this case the points for maximum difficulty are obtained easily: 
+M3.5 corresponds exactly to the interval border 8 and no further
+interpolation is necessary. \\
+
+The track also includes lots of easy sections resulting in an average difficulty
+of M1.5. The points for this criteria are calculated by interpolating between M1 and M2.5
+(boundaries for 2 and 8 points, respectively): 
+$s(1.5) = \frac{8 - 2}{2.5 - 1} (1.5 - 1) + 2 = 4$\\
+
+The UDH rating of the track consists of the sum of the points for the individual criteria, 
+rounded to the nearest integer:\\
+$\mathrm{UDH} = 9 + 4.4 + 8 + 4 = 25.4 \approx 25$\\
+The result is a UDH rating of 25 out of 40 points. For convenience these calculations 
+can be automatically done using the online calculator: %TODO: link to online tool
 
 \subsubsection{UXC Example}
-TODO
+For the UXC scale the same algorithms (i.e. linear interpolation) as for the UDH scale are used. However, different criteria and point distributions contribute
+to the final rating. The example will present the calculations for a long and easy course.\\
 
+{\parindent0pt
+Total Length: 42~km\\
+42~km is longer than 40~km so the full 15 points are given. \\
 
+Total Ascent: 590~m\\
+Interpolation on the interval 200--800~m / 1.5--6 points:\\
+$s(590) = \frac{6 - 1.5}{800 - 200} (590 - 200) + 1.5 = 4.4$\\
+
+Maximum Slope Uphill:  8\% \\
+Interpolation on the interval 0--10~\% / 0--1 points:\\
+$s(7) = \frac{1 - 0}{10 - 0} (8 - 0) + 0 = 0.8$\\
+
+Maximum Difficulty: M1.5\\
+Interpolation on the interval M1--2.5 / 1--4 points:\\
+$s(7) = \frac{4 - 1}{2.5 - 1} (1.5 - 1) + 1 = 2$\\
+
+Average Difficulty: M0.5\\
+M0.5 corresponds exactly to 1.5 points.\\
+
+Final UXC rating:\\
+$\mathrm{UXC} = 15 + 4.4 + 0.8 + 2 + 1.5 = 23.7 \approx 24$\\
+}
 
 \subsection{Publishing Scores}
 Hosts of muni events are encouraged to publish the scores for the event tracks
