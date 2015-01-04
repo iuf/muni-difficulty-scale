@@ -17,6 +17,10 @@ UXC-Scale
 The UXC scale is used to rate the overall track difficulty of muni cross country tracks.
 
 
+Online calculator
+==================
+An online calculator is available at https://muni-scale.info
+
 Build requirements
 ====================
 A LaTeX distribution such as texlive.
